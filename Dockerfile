@@ -36,6 +36,8 @@ RUN \
     rm -R /tmp/* && \
     useradd --home /app --gid root --system Terraria && \
     chown Terraria:root -R /app && \
+    chmod +x /app/conf.sh && \
+    chmod +x /app/server.sh && \
     chmod +x /app/TerrariaServer*
 
 USER Terraria
