@@ -25,6 +25,13 @@ Example: Server to run on port 8080
   -p 8080:8080 \
 ```
 
+Also, change the **\<data-volume-name\>** to use either an new or existing Docker Volume. If you do not want to use a volume, change the name to a local directory.
+
+```bash
+  -v terraria-data:/app/Worlds\
+  or
+  -v /home/user/terraria:/app/Worlds\
+```
 
 This way a single server can support multiple Terraria Dedicated Server containers.
 

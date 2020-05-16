@@ -46,7 +46,7 @@ else
 
     # Read in Difficulty
     echo "Difficulty?"
-    echo "( Sets world difficulty when using -autocreate. Options: 0(normal), 1(expert) )"
+    echo "( Sets world difficulty when using -autocreate. Options: 0(classic), 1(expert), 2(master), 1(journey) )"
     read Difficulty
     case $Difficulty in
     [0]*)
