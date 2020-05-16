@@ -50,10 +50,16 @@ else
     read Difficulty
     case $Difficulty in
     [0]*)
-        echo "Selected Normal Difficulty!"
+        echo "Selected Classic Difficulty!"
         ;;
     [1]*)
         echo "Selected Expert Difficulty!"
+        ;;
+    [2]*)
+        echo "Selected Master Difficulty!"
+        ;;
+    [3]*)
+        echo "Selected Journey Difficulty!"
         ;;
     *)
         echo "Selected Normal Difficulty!"
