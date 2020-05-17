@@ -30,7 +30,8 @@ COPY ./server.sh /app/server.sh
 
 # Set up Enviornment
 RUN \
-    curl -sL http://terraria.org/server/terraria-server-$VANILLA_VERSION.zip --output /tmp/terraria-server.zip && \
+    #curl -sL http://terraria.org/server/terraria-server-$VANILLA_VERSION.zip --output /tmp/terraria-server.zip && \
+    curl -sL https://www.terraria.org/system/dedicated_servers/archives/000/000/036/original/terraria-server-$VANILLA_VERSION.zip --output /tmp/terraria-server.zip && \
     7z x /tmp/terraria-server.zip  -o/tmp && \
     mv /tmp/$VANILLA_VERSION/Linux/* /app && \
     rm -R /tmp/* && \
